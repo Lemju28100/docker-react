@@ -6,3 +6,17 @@ test('renders learn react link', () => {
   const linkElement = screen.getByText(/learn react/i);
   expect(linkElement).toBeInTheDocument();
 });
+
+test('Go', () => {
+  render(<App />);
+  const linkElement = screen.getByText(/Go/i);
+  expect(linkElement).toBeInTheDocument();
+});
+
+test('Go', () => {
+  render(<App />);
+  const linkElement = screen.getByText(/Go/i);
+  expect(linkElement).toBeInTheDocument();
+});
+
+
