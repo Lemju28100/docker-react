@@ -1,0 +1,11 @@
+sudo: required
+services:
+  - docker
+  # - docker run -e CI=true USERNAME/docker-react npm run test -- --coverage
+  # language: generic 
+
+before_install:
+  - docker build -t emmy/react -f Dockerfile.dev .
+
+script:
+  - docker run emmy/react npm run test -- --coverage
